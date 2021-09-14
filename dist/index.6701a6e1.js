@@ -22847,7 +22847,7 @@ class MovieCard extends _reactDefault.default.Component {
         return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
             className: "movie-card",
             onClick: ()=>{
-                onMovieClick(movie);
+                onMovieClick(movieData);
             },
             __source: {
                 fileName: "src/components/movie-card/movie-card.jsx",
