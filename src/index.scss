@@ -5,7 +5,9 @@ $color: steelblue;
 }
 
 .movie-card {
-  &:hover {
+  &:hover, focus {
     cursor: pointer;
+    opacity: 0.8;
   }
 }
+
