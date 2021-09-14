@@ -14,30 +14,31 @@
 - As a user, I want to be able to create a profile to store data about my favorite movies.
 
 
-### Essential Views and Features:
+
 # Main view
+## Essential Views and Features:
 - Returns a list of ALL movies to the user (each listed item with an image, title, and description)
 - Sorting and filtering
 - Ability to select a movie for more details
 
-## Single movie view
+### Single movie view
 - Returns data (description, genre, director, image) about a single movie to the user
 - Allows users to add a movie to their list of favorites
 
-## Login view
+### Login view
 - Allows users to log in with a username and password
 - Registration view
 - Allows new users to register (username, password, email, birthday)
 
-## Genre view
+### Genre view
 - Returns data about a genre, with a name and description
 - Displays example movies
 
-## Director view
+### Director view
 - Returns data about a director (name, bio, birth year, death year)
 - Displays example movies
 
-## Profile view
+### Profile view
 - Allows users to update their user info (username, password, email, date of birth)
 - Allows existing users to deregister
 - Displays favorite movies
