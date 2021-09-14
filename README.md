@@ -59,6 +59,7 @@
 
 ### Dependencies:
 - @parcel/transformer-sass
+- axios
 
 
 
