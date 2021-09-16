@@ -1,9 +1,13 @@
 import React from 'react';
 import axios from 'axios';// Using it to fetch the movies, then set the state of movies using this.setState
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-
+import { LoginView } from '../login-view/login-view';
 import { MovieCard } from '../movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';
+import { RegistrationView } from '../registration-view/registration-view';
+
 
 
 
@@ -13,47 +17,86 @@ export class MainView extends React.Component {
         super(); // This will call the parent React.Component’s constructor, which will give your class the actual React component’s features. Also, it will initialize the component’s this variable
         this.state = {
             movies: [],
-            selectedMovie: null
-        } 
+            selectedMovie: null,
+            user: null,
+            register: false
+          };    
     }
 
     componentDidMount(){
-      axios.get('https://my-flixdbapp.herokuapp.com/movies')
-        .then(response => {
-          this.setState({
-            movies: response.data
+        axios.get('https://my-flixdbapp.herokuapp.com/movies')
+          .then(response => {
+            this.setState({
+              movies: response.data
+            });
+          })
+          .catch(error => {
+            console.log(error);
           });
-        })
-        .catch(error => {
-          console.log(error);
-        });
-    }
+      }
 
-      setSelectedMovie(newSelectedMovie) {
-    this.setState({
-      selectedMovie: newSelectedMovie
+      setSelectedMovie(movie) {
+        this.setState({
+      selectedMovie: movie
     });
   }
 
-    render() {
-        const { movies, selectedMovie } = this.state;
+  //When a user successfully logs in, this function updates the `user` property in state to that *particular user
+      onLoggedIn(user) {
+        this.setState({
+          user
+        });
+      }
+      //When a new user is registered  
+      SonRegistration(register) {
+        this.setState({
+          register
+        });
+      }
 
-        if (movies.length === 0) return <div className="main-view">The list is empty!</div>;
-      
-        return (
-          <div className="main-view">
-            {selectedMovie
-            ? <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => 
-              { this.setSelectedMovie(newSelectedMovie); }}/>
-            : movies.map(movie => (
-              <MovieCard key={movie._id} movieData={movie} onMovieClick={(newSelectedMovie) => 
-                { this.setSelectedMovie(newSelectedMovie) }}/>
+    render() {
+        const { movies, selectedMovie, register, user} = this.state;
+         // If there is no user, the LoginView is rendered. If there is a user logged in, the user details are *passed as a prop to the LoginView
+
+        if (!register) return <RegistrationView SignIn={register => 
+          this.SignIn(register)} />; 
+
+      // If there is no user, the LoginView is rendered. If there is a user logged in, the user details are *passed as a prop to the LoginView
+      if (!user) return <LoginView onLoggedIn={user => 
+        this.onLoggedIn(user)} />;  
+  
+      // Before the movies have been loaded
+      if (movies.length === 0) return <div className="main-view" />;
+  
+      return (
+        <div className="main-view">
+          {selectedMovie
+            ? (
+              <Row className="justify-content-md-center">
+                <Col md={8}>
+                  <MovieView movie={selectedMovie}  onBackClick={newSelectedMovie => 
+                    { this.setSelectedMovie(newSelectedMovie); }}/></Col>
+              </Row>
+            ):             
+            movies.map(movie => (
+              <MovieCard key={movie._id} movie={movie} onMovieClick={newSelectedMovie => 
+                { this.setSelectedMovie(newSelectedMovie); }}/>
             ))
           }
-          </div>
-        );
+        </div>
+      );
     }
-}
+  
+  }
+
+
+  export default MainView;
+
+
+  
+
+
+
 
 
 
