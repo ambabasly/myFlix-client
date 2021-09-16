@@ -26623,21 +26623,21 @@ class MovieCard extends _reactDefault.default.Component {
             className: "main-view",
             __source: {
                 fileName: "src/components/movie-card/movie-card.jsx",
-                lineNumber: 15
+                lineNumber: 14
             },
             __self: this,
             children: selectedMovie ? /*#__PURE__*/ _jsxRuntime.jsx(_rowDefault.default, {
                 className: "justify-content-md-center",
                 __source: {
                     fileName: "src/components/movie-card/movie-card.jsx",
-                    lineNumber: 18
+                    lineNumber: 17
                 },
                 __self: this,
                 children: /*#__PURE__*/ _jsxRuntime.jsx(_colDefault.default, {
                     md: 8,
                     __source: {
                         fileName: "src/components/movie-card/movie-card.jsx",
-                        lineNumber: 19
+                        lineNumber: 18
                     },
                     __self: this,
                     children: /*#__PURE__*/ _jsxRuntime.jsx(MovieView, {
@@ -26647,7 +26647,7 @@ class MovieCard extends _reactDefault.default.Component {
                         },
                         __source: {
                             fileName: "src/components/movie-card/movie-card.jsx",
-                            lineNumber: 20
+                            lineNumber: 19
                         },
                         __self: this
                     })
@@ -26656,14 +26656,14 @@ class MovieCard extends _reactDefault.default.Component {
                 className: "justify-content-md-center",
                 __source: {
                     fileName: "src/components/movie-card/movie-card.jsx",
-                    lineNumber: 26
+                    lineNumber: 25
                 },
                 __self: this,
                 children: movies.map((movie1)=>/*#__PURE__*/ _jsxRuntime.jsx(_colDefault.default, {
                         md: 3,
                         __source: {
                             fileName: "src/components/movie-card/movie-card.jsx",
-                            lineNumber: 28
+                            lineNumber: 27
                         },
                         __self: this,
                         children: /*#__PURE__*/ _jsxRuntime.jsx(MovieCard, {
@@ -26673,7 +26673,7 @@ class MovieCard extends _reactDefault.default.Component {
                             },
                             __source: {
                                 fileName: "src/components/movie-card/movie-card.jsx",
-                                lineNumber: 29
+                                lineNumber: 28
                             },
                             __self: this
                         }, movie1._id)

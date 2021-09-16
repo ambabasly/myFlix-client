@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-
 import './movie-card.scss';
 
 export class MovieCard extends React.Component {
