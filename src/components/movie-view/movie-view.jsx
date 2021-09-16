@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 
 
+
 export class MovieView extends React.Component {
 
   render() {
