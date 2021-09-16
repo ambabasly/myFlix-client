@@ -1,0 +1,18 @@
+
+.main-view {
+  text-align: center;
+}
+
+.card-container {
+  display: inline-block;
+}
+
+
+.my-flix {
+  color: steelblue;
+}
+
+.movie-card:hover, .movie-card focus {
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.1d334ea1.css.map */
