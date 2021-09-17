@@ -15,6 +15,9 @@ import { GenreView } from '../genre-view/genre-view';
 import { ProfileView } from '../profile-view/profile-view';
 import Container from 'react-bootstrap/Container';
 
+import NavBar from '../navbar-view/navbar-view'
+
+
 // SCSS Styling import
 import './main-view.scss';
 

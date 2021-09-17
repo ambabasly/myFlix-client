@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 
 import './registration-view.scss';
 
-
 export function RegistrationView(props) {
 
     const [name, setName] = useState("");
@@ -28,7 +27,7 @@ export function RegistrationView(props) {
         e.preventDefault();
         let setisValid = formValidation();
         if (setisValid) {
-          axios.post('https://my-flixdbapp.herokuapp.com/users', {
+          axios.post('https://my-flixdbapp.herokuapp.com/users/registration', {
             Name: name,
             Username: username,
             Password: password,
