@@ -24,6 +24,30 @@
   text-align: center;
 }
 
+.favorite-star {
+  color: orange;
+  font-size: 40px;
+  padding: 0 16px;
+  position: absolute;
+  right: 0;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+#login-username,
+#login-password {
+  margin-top: 4px;
+  width: 100%;
+}
+
+#login-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 .image-container {
   position: relative;
   transition: transform 0.2s;
