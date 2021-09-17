@@ -2,65 +2,174 @@ import React, {useState} from "react";
 import PropTypes from 'prop-types';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-
-
+import axios from 'axios';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/row';
+import { Link } from "react-router-dom";
 
 import './registration-view.scss';
 
 
 export function RegistrationView(props) {
 
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [email, setEmail] = useState('');
-    const [birthDate, setBirthDate] = useState('');
+    const [name, setName] = useState("");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const [birthdate, setBirthdate] = useState("");
+
+    const [nameError, setNameError] = useState({});
+    const [usernameError, setUsernameError] = useState({});
+    const [passwordError, setPasswordError] = useState({});
+    const [emailError, setEmailError] = useState({});
+    const [birthdateError, setBirthdateError] = useState({});
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(username, password, email, birthDate);
-        props.SignIn(username);
+        let setisValid = formValidation();
+        if (setisValid) {
+          axios.post('https://my-flixdbapp.herokuapp.com/users', {
+            Name: name,
+            Username: username,
+            Password: password,
+            Email: email,
+            Birthdate: birthdate
+          })
+          .then(response => {
+            const data = response.data;
+            console.log(data);
+            window.open('/', '_self'); // the second argument '_self' is necessary so that the page will open in the current tab
+          })
+          .catch(e => {
+            console.log('error registering the user')
+          });
+      };
+    }
+
+    const formValidation = () => {
+      let nameError = {};
+      let usernameError = {};
+      let passwordError = {};
+      let emailError = {};
+      let birthdateError = {};
+      let isValid = true;
+
+      if (name === '') {
+        nameError.nameEmpty = "Please enter your Name.";
+        isValid = false;
       }
+      if (username.trim().length < 4) {
+        usernameError.usernameShort = "Username incorrect. Use at least 4 characters.";
+        isValid = false;
+      }
+      if (password.trim().length < 5) {
+        passwordError.passwordMissing = "Password incorrect. Use at least 5 characters.";
+        isValid = false;
+      }
+      if (!(email && email.includes(".") && email.includes("@"))) {
+        emailError.emailNotEmail = "Email address incorrect.";
+        isValid = false;
+      }
+      if (birthdate === '') {
+        birthdateError.birthdateEmpty = "Please enter your birthdate.";
+        isValid = false;
+      }
+      setNameError(nameError);
+      setUsernameError(usernameError);
+      setPasswordError(passwordError);
+      setEmailError(emailError);
+      setBirthdateError(birthdateError);
+      return isValid;
+  };
 
     return (
-      <div>
-        <h1>Sign In</h1>
-          <Form>
-            <Form.Group controlId="formUsername">
-              <Form.Label>Username:</Form.Label>
-              <Form.Control type="text" placeholder="Enter username" value={username} onChange={e => 
-                setUsername(e.target.value)}></Form.Control>
-            </Form.Group>
-            <Form.Group controlId="formPassword">
-              <Form.Label>Password:</Form.Label>
-              <Form.Control type="text" placeholder="Enter password" value={password} onChange={e => 
-                setPassword(e.target.value)}></Form.Control>
-            </Form.Group>
-            <Form.Group controlId="formEmail">
-              <Form.Label>email</Form.Label>
-              <Form.Control type="email" placeholder="Enter your email" value={email} onChange={e => 
-                setEmail(e.target.value)}></Form.Control>
-            </Form.Group>
-            <Form.Group controlId="Birth date">
-              <Form.Label>Birth Date</Form.Label>
-              <Form.Control type="date" value={birthDate} onChange={e => 
-                setBirthDate(e.target.value)}></Form.Control>
-            </Form.Group>    
-            <div className="mb-2">
-              <Button variant="primary" size="lg" onClick={handleSubmit}>Submit</Button>
+      <Form className="register justify-content-md-center">
+        <Row>
+        <Form.Group controlId="formName">
+          <Form.Label>Name:</Form.Label>
+          <Form.Control type="text" value={name} onChange={e => setName(e.target.value)} />
+          {Object.keys(nameError).map((key) => {
+            return (
+              <div key={key}>
+                {nameError[key]}
+              </div>
+            );
+          })}
+        </Form.Group>
+      </Row>
+
+      <Form.Group controlId="formUsername">
+        <Form.Label>Username:</Form.Label>
+        <Form.Control type="text" value={username} onChange={e => setUsername(e.target.value)} />
+        {Object.keys(usernameError).map((key) => {
+          return (
+            <div key={key}>
+              {usernameError[key]}
             </div>
-        </Form>
-      </div>
-    );
-  }
-    RegistrationView.propTypes = {
-      register: PropTypes.shape({
-          Username: PropTypes.string.isRequired,
-          Password: PropTypes.string.isRequired,
-          Email: PropTypes.string.isRequired,
-          BirthDate: PropTypes.date
-      }),
-      onRegister: PropTypes.func,
-    }
+          );
+        })}
+      </Form.Group>
+
+      <Row>
+        <Form.Group controlId="formPassword">
+          <Form.Label>Create Password:</Form.Label>
+          <Form.Control type="password" value={password} onChange={e => setPassword(e.target.value)} />
+          {Object.keys(passwordError).map((key) => {
+            return (
+              <div key={key}>
+                {passwordError[key]}
+              </div>
+            );
+          })}
+        </Form.Group>
+      </Row>
+
+      <Row>
+        <Form.Group controlId="formEmail">
+          <Form.Label>Email:</Form.Label>
+          <Form.Control type="email" value={email} onChange={e => setEmail(e.target.value)} />
+          {Object.keys(emailError).map((key) => {
+            return (
+              <div key={key}>
+                {emailError[key]}
+              </div>
+            );
+          })}
+        </Form.Group>
+      </Row>
+
+      <Form.Group controlId="formBirthdate">
+        <Form.Label>Birthdate:</Form.Label>
+        <Form.Control type="date" value={birthdate} onChange={e => setBirthdate(e.target.value)} />
+        {Object.keys(birthdateError).map((key) => {
+          return (
+            <div key={key}>
+              {birthdateError[key]}
+            </div>
+          );
+        })}
+      </Form.Group>
+
+      <span>
+        <Button type="submit" onClick={handleSubmit}>Submit</Button>
+        {' '}
+        <Link to="/">
+          <Button variant="secondary" type="button">Back</Button>
+        </Link>
+      </span>
+    </Form >
+  );
+}
+
+RegistrationView.propTypes = {
+  register: PropTypes.shape({
+    Name: PropTypes.string.isRequired,
+    Username: PropTypes.string.isRequired,
+    Password: PropTypes.string.isRequired,
+    Email: PropTypes.string.isRequired,
+    BirthDate: PropTypes.string.isRequired
+  }),
+};
     
 
   
