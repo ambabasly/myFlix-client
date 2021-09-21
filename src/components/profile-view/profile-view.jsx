@@ -225,7 +225,8 @@ export class ProfileView extends React.Component {
 
               <h3>Delete your Account</h3>
               <Card.Body>
-                <Button variant='danger' onClick={(e) => this.handleDeleteUser(e)}>
+                <Button variant='danger' onClick={(e) => 
+                  this.handleDeleteUser(e)}>
                   Delete Account
                 </Button>
               </Card.Body>

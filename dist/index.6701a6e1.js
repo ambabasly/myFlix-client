@@ -22766,8 +22766,6 @@ var _colDefault = parcelHelpers.interopDefault(_col);
 var _directorView = require("../director-view/director-view");
 var _genreView = require("../genre-view/genre-view");
 var _profileView = require("../profile-view/profile-view");
-var _container = require("react-bootstrap/Container");
-var _containerDefault = parcelHelpers.interopDefault(_container);
 var _navbarView = require("../navbar-view/navbar-view");
 var _navbarViewDefault = parcelHelpers.interopDefault(_navbarView);
 // SCSS Styling import
@@ -23037,7 +23035,7 @@ exports.default = MainView;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","axios":"iYoWk","react-router-dom":"cpyQW","../movie-card/movie-card":"6EiBJ","../movie-view/movie-view":"ikZdr","../login-view/login-view":"054li","../registration-view/registration-view":"aP2YV","react-bootstrap/Row":"c0x1x","react-bootstrap/Col":"fbam0","../director-view/director-view":"ck15y","../genre-view/genre-view":"8WCoL","../profile-view/profile-view":"2E7Aw","react-bootstrap/Container":"2PRIq","./main-view.scss":"jyMAr","@parcel/transformer-js/src/esmodule-helpers.js":"eYvCy","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"i1KfJ","../navbar-view/navbar-view":"j0Dt2"}],"iYoWk":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","axios":"iYoWk","react-router-dom":"cpyQW","../movie-card/movie-card":"6EiBJ","../movie-view/movie-view":"ikZdr","../login-view/login-view":"054li","../registration-view/registration-view":"aP2YV","react-bootstrap/Row":"c0x1x","react-bootstrap/Col":"fbam0","../director-view/director-view":"ck15y","../genre-view/genre-view":"8WCoL","../profile-view/profile-view":"2E7Aw","./main-view.scss":"jyMAr","@parcel/transformer-js/src/esmodule-helpers.js":"eYvCy","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"i1KfJ","../navbar-view/navbar-view":"j0Dt2"}],"iYoWk":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"3QmO2"}],"3QmO2":[function(require,module,exports) {
@@ -28279,12 +28277,11 @@ var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 var _button = require("react-bootstrap/Button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
-//import Badge from 'react-bootstrap/Badge';
+var _badge = require("react-bootstrap/Badge");
+var _badgeDefault = parcelHelpers.interopDefault(_badge);
 var _reactRouterDom = require("react-router-dom");
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _badge = require("react-bootstrap/Badge");
-var _badgeDefault = parcelHelpers.interopDefault(_badge);
 class MovieView extends _reactDefault.default.Component {
     addFavorite() {
         const token = localStorage.getItem('token');

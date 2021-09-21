@@ -13,7 +13,7 @@ import Col from 'react-bootstrap/Col';
 import { DirectorView } from '../director-view/director-view';
 import { GenreView } from '../genre-view/genre-view';
 import { ProfileView } from '../profile-view/profile-view';
-import Container from 'react-bootstrap/Container';
+
 
 import NavBar from '../navbar-view/navbar-view'
 
