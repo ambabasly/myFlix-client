@@ -1,17 +1,12 @@
-label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 8px;
-  }
-  
-  #login-username,
-  #login-password {
-    margin-top: 4px;
-    width: 100%;
-  }
-  
-  #login-form {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
+.login {
+  margin-top: auto;
+  width: 700%;
+  padding:30px;
+  border:0.3px solid grey;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 15px;
+}
+
+.app-container {
+  padding: 5px;
+}

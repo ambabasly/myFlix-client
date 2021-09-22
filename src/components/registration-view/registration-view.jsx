@@ -86,7 +86,8 @@ export function RegistrationView(props) {
         <Row>
         <Form.Group controlId="formName">
           <Form.Label>Name:</Form.Label>
-          <Form.Control type="text" value={name} onChange={e => setName(e.target.value)} />
+          <Form.Control type="text" value={name} onChange={e => 
+            setName(e.target.value)} />
           {Object.keys(nameError).map((key) => {
             return (
               <div key={key}>
@@ -96,10 +97,12 @@ export function RegistrationView(props) {
           })}
         </Form.Group>
       </Row>
-
+      
+      <Row>
       <Form.Group controlId="formUsername">
         <Form.Label>Username:</Form.Label>
-        <Form.Control type="text" value={username} onChange={e => setUsername(e.target.value)} />
+        <Form.Control type="text" value={username} onChange={e => 
+          setUsername(e.target.value)} />
         {Object.keys(usernameError).map((key) => {
           return (
             <div key={key}>
@@ -108,11 +111,13 @@ export function RegistrationView(props) {
           );
         })}
       </Form.Group>
+      </Row>
 
       <Row>
         <Form.Group controlId="formPassword">
           <Form.Label>Create Password:</Form.Label>
-          <Form.Control type="password" value={password} onChange={e => setPassword(e.target.value)} />
+          <Form.Control type="password" value={password} onChange={e => 
+            setPassword(e.target.value)} />
           {Object.keys(passwordError).map((key) => {
             return (
               <div key={key}>
@@ -137,6 +142,7 @@ export function RegistrationView(props) {
         </Form.Group>
       </Row>
 
+      <Row>
       <Form.Group controlId="formBirthdate">
         <Form.Label>Birthdate:</Form.Label>
         <Form.Control type="date" value={birthdate} onChange={e => setBirthdate(e.target.value)} />
@@ -148,7 +154,9 @@ export function RegistrationView(props) {
           );
         })}
       </Form.Group>
+      </Row>
 
+      <Row>
       <span>
         <Button type="submit" onClick={handleSubmit}>Submit</Button>
         {' '}
@@ -156,6 +164,7 @@ export function RegistrationView(props) {
           <Button variant="secondary" type="button">Back</Button>
         </Link>
       </span>
+      </Row>
     </Form >
   );
 }
