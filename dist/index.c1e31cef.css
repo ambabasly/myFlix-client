@@ -19,18 +19,6 @@
 .button-space {
   padding: 5px 5px 5px 0px;
 }
-.login {
-  margin-top: auto;
-  width: 700%;
-  padding: 30px;
-  border: 0.3px solid grey;
-  box-shadow: 5px 5px 5px grey;
-  border-radius: 15px;
-}
-
-.app-container {
-  padding: 5px;
-}
 /*.image-container {
 	position: relative;
 	transition: transform 0.2s;
@@ -69,36 +57,7 @@ div {
 body {
   padding-top: 60px;
 }
-/*.profile-view {
-    padding:30px;
-    border:0.3px solid grey;
-    box-shadow: 5px 5px 5px grey;
-    border-radius: 15px;
-  }
 
-  .app-container {
-  padding: 30px;
-  } */
-.profile-button {
-  width: 20%;
-}
-
-.favorites-items {
-  border-style: none;
-}
-* html {
-  background: #141414;
-}
-
-.app-container {
-  background: #141414;
-  color: #ffffff;
-  padding-top: 40px;
-}
-
-.col-md-3 {
-  padding: 5px;
-}
 /*.image-container {
 	position: relative;
 	transition: transform 0.2s;
@@ -134,6 +93,36 @@ body {
   }*/
 .fav-btn {
   padding-left: 35px;
+}
+/*.profile-view {
+    padding:30px;
+    border:0.3px solid grey;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 15px;
+  }
+
+  .app-container {
+  padding: 30px;
+  } */
+.profile-button {
+  width: 20%;
+}
+
+.favorites-items {
+  border-style: none;
+}
+* html {
+  background: #141414;
+}
+
+.app-container {
+  background: #141414;
+  color: #ffffff;
+  padding-top: 40px;
+}
+
+.col-md-3 {
+  padding: 5px;
 }
 .my-flix {
   color: steelblue;

@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Button, Card, CardDeck, Form, Row } from 'react-bootstrap';
 
 import { setUser, updateUser } from '../../actions/actions';
@@ -35,7 +35,7 @@ export class ProfileView extends React.Component {
   //getting user method
   getUser(token) {
     const username = localStorage.getItem('user');
-    axios.get(`https://mmy-flixdbapp.herokuapp.com/users/${username}`, {
+    axios.get(`https://my-flixdbapp.herokuapp.com/users/${username}`, {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then((response) => {
@@ -163,33 +163,33 @@ export class ProfileView extends React.Component {
     const { movies } = this.props;
 
     return (
-        <Row className="profile-view">
-        <Card className="profile-card border-0">
-          <h1>Your Favorites Movies</h1>
-          {FavoriteMovies.length === 0 && <div className="text-center">Empty.</div>}
-            
-            <div className="favorites-movies ">
-              {FavoriteMovies.length > 0 &&
-                movies.map((movie) => {
-                  if (movie._id === FavoriteMovies.find((favMovie) => 
-                  favMovie === movie._id)) {
+      <Row className="profile-view">
+      <Card className="profile-card border-0">
+        <h1>Your Favorites Movies</h1>
+        {FavoriteMovies.length === 0 && <div className="text-center">Empty.</div>}
+          
+          <div className="favorites-movies ">
+            {FavoriteMovies.length > 0 &&
+              movies.map((movie) => {
+                if (movie._id === FavoriteMovies.find((favMovie) => 
+                favMovie === movie._id)) {
 
-                    return (
-                      <CardDeck key={movie._id} className="movie-card-deck">
-                        <Card className="favorites-item card-content border-0" style={{ width: '16rem' }} key={movie._id}>
-                          <Card.Img style={{ width: '18rem', 'padding-top': '10px' }} className="movieCard" variant="top" src={movie.ImageURL} />
+                  return (
+                    <CardDeck key={movie._id} className="movie-card-deck">
+                      <Card className="favorites-item card-content border-0" style={{ width: '16rem' }} key={movie._id}>
+                        <Card.Img style={{ width: '18rem', 'padding-top': '10px' }} className="movieCard" variant="top" src={movie.ImageURL} />
 
-                            <Card.Title className="movie-card-title">{movie.Title}</Card.Title>
-                            <Button size='sm' className='profile-button remove-favorite' variant='danger' value={movie._id} onClick={() => 
-                              this.removeFavouriteMovie(movie)}>
-                              Remove
-                            </Button>
-                        </Card>
-                      </CardDeck>
-                    );
-                  }
-                })}
-            </div>
+                          <Card.Title className="movie-card-title">{movie.Title}</Card.Title>
+                          <Button size='sm' className='profile-button remove-favorite' variant='danger' value={movie._id} onClick={() => 
+                            this.removeFavouriteMovie(movie)}>
+                            Remove
+                          </Button>
+                      </Card>
+                    </CardDeck>
+                  );
+                }
+              })}
+          </div>
 
           <h1 className="Profile">Update Profile</h1>
             <Form noValidate validated={validated} className="update-form" onSubmit={(e) => 
@@ -255,7 +255,7 @@ let mapStateToProps = state => {
 
 export default connect(mapStateToProps, { setUser, updateUser })(ProfileView);
 
-/*ProfileView.propTypes = {
+ProfileView.propTypes = {
   user: PropTypes.shape({
     FavoriteMovies: PropTypes.arrayOf(
       PropTypes.shape({
@@ -267,4 +267,4 @@ export default connect(mapStateToProps, { setUser, updateUser })(ProfileView);
     Email: PropTypes.string.isRequired,
     Birthdate: PropTypes.string,
   }),
-}; */
+}; 

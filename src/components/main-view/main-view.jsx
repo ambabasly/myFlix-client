@@ -12,8 +12,7 @@ import { setMovies } from '../../actions/actions';
 import MoviesList from '../movies-list/movies-list';
 
 
-/*#1 The rest of components import statements but without the MovieCard's 
-  because it will be imported and used in the MoviesList component rather
+/*#1 The rest of components import statements but without the MovieCard's because it will be imported and used in the MoviesList component rather
   than in here. */
 import { MovieView } from '../movie-view/movie-view';
 import { LoginView } from '../login-view/login-view';
@@ -62,14 +61,6 @@ class MainView extends React.Component {
       });
     }
 
-  /*onLoggedOut() {
-      localStorage.removeItem('token');
-      localStorage.removeItem('user');
-      this.setState({
-        user: null
-      });
-    }*/
-
     // Log In
   onLoggedIn(authData) {
     console.log(authData);
@@ -82,30 +73,6 @@ class MainView extends React.Component {
     this.getMovies(authData.token);
   }
   
- /* //  Getting user recent data from Database
-  getUsers(token) {
-    axios.post('https://my-flixdbapp.herokuapp.com/users', {
-      headers: { Authorization: `Bearer ${token}` }
-    })
-      .then(response => {
-        // Assign the result to the state
-        this.setState({
-          users: response.data
-        });
-        console.log(response)
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  }
-
-  //When a new user is registered  
-  onRegister(register) {
-    this.setState({
-      register: register,
-    });
-  }*/
-
     render() {
         // #5 movies is extracted from this.props rather than from the this.state
     let { movies } = this.props;
@@ -208,7 +175,7 @@ let mapStateToProps = state => {
 export default connect(mapStateToProps, { setMovies })(MainView);// Modules
 
 
-  
+
 
 
 
