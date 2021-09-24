@@ -19,6 +19,18 @@
 .button-space {
   padding: 5px 5px 5px 0px;
 }
+.login {
+  margin-top: auto;
+  width: 700%;
+  padding: 30px;
+  border: 0.3px solid grey;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 15px;
+}
+
+.app-container {
+  padding: 5px;
+}
 /*.image-container {
 	position: relative;
 	transition: transform 0.2s;
@@ -57,43 +69,6 @@ div {
 body {
   padding-top: 60px;
 }
-
-/*.image-container {
-	position: relative;
-	transition: transform 0.2s;
-  border-style: none;
-}
-
-.image-container:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-}
-
-.image-container:hover .overlay {
-	opacity: 1;
-}
-
-.overlay {
-	position: absolute;
-	width: 100%;
-	transition: 0.5s ease;
-	opacity: 0;
-	bottom: 0;
-	font-size: 20px;
-	padding: 20px;
-	text-align: center;
-} 
-
-.favorite-star {
-    color: orange;
-    font-size: 40px;
-    padding: 0 16px;
-    position: absolute;
-    right: 0;
-  }*/
-.fav-btn {
-  padding-left: 35px;
-}
 /*.profile-view {
     padding:30px;
     border:0.3px solid grey;
@@ -111,19 +86,19 @@ body {
 .favorites-items {
   border-style: none;
 }
-* html {
-  background: #141414;
+/*html {
+	background: #141414;
 }
 
 .app-container {
-  background: #141414;
-  color: #ffffff;
+	background: #141414;
+	color: #ffffff;
   padding-top: 40px;
 }
 
-.col-md-3 {
+.col-md-3{
   padding: 5px;
-}
+}*/
 .my-flix {
   color: steelblue;
 }

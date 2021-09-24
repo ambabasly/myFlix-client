@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
 import axios from 'axios';
@@ -25,7 +25,7 @@ export class MovieView extends React.Component {
     const token = localStorage.getItem('token');
     const username = localStorage.getItem('user');
 
-    axios.post(`https://my-flixdbapp.herokuapp.com/users/${username}/movies/${this.props.movie._id}`, {}, {
+    axios.post(`https:my-flixdbapp.herokuapp.com/users/${username}/movies/${this.props.movie._id}`, {}, {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(response => {
@@ -79,7 +79,7 @@ export class MovieView extends React.Component {
   }
 }
 
-MovieView.propTypes = {
+/*MovieView.propTypes = {
   movie: PropTypes.shape({
     Title: PropTypes.string.isRequired,
     Description: PropTypes.string.isRequired,
@@ -92,7 +92,7 @@ MovieView.propTypes = {
       Name: PropTypes.string.isRequired
     }),
   }).isRequired
-};
+};*/
 
 
 

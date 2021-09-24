@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import PropTypes from "prop-types";
-import { Container, Card, Button, } from "react-bootstrap";
+//import PropTypes from "prop-types";
+import { Container, Card, Button } from "react-bootstrap";
 import "./movie-card.scss";
 
 import { Link } from "react-router-dom";
@@ -12,7 +12,7 @@ export class MovieCard extends React.Component {
     const token = localStorage.getItem('token');
     const username = localStorage.getItem('user');
 
-    axios.post(`https://my-flixdbapp.herokuapp.com/users/${username}/movies/${this.props.movie._id}`, {}, {
+    axios.post(`https:my-flixdbapp.herokuapp.com/users/${username}/movies/${this.props.movie._id}`, {}, {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(response => {
@@ -45,11 +45,11 @@ export class MovieCard extends React.Component {
   }
 }          
 
-MovieCard.propTypes = {
+/*MovieCard.propTypes = {
   movie: PropTypes.shape({
     Title: PropTypes.string.isRequired,
     Description: PropTypes.string.isRequired,
     ImageURL: PropTypes.string.isRequired,
     Featured: PropTypes.bool.isRequired,
   }).isRequired,
-};
+};*/
