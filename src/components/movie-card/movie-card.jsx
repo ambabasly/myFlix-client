@@ -31,7 +31,7 @@ export class MovieCard extends React.Component {
       <Card
         style={{ border: 0 }} bg='secondary' text='white'>
         <Link to={`/movies/${movie._id}`}>
-          <Card.Img className="image-container" variant="top" src={movie.ImageURL} />
+          <Card.Img className="image-container" variant="top" src={movie.ImagePath} />
         </Link>
 
         <Card.Body className="fav-btn" style={{ paddingLeft: 30, margin: 'auto' }}>
