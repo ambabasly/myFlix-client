@@ -1,5 +1,4 @@
-# Project Name
-**flix_App**
+# **flix_App**
 
 ## Built With
 - React
