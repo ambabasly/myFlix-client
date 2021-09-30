@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "parcel-bundler": "^1.12.5",
     "remove-react-proptypes": "^1.0.0"
   }
 }
