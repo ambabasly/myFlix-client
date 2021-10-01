@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 //import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/row';
+import Row from 'react-bootstrap/Row';
 import { Link } from "react-router-dom";
 
 import './registration-view.scss';
