@@ -232,17 +232,11 @@ export class ProfileView extends React.Component {
               </Button>
 
               <h3>Delete your Account</h3>
-              <Card.Body>
-
                 <Button variant='danger' onClick={(e) => 
                   this.handleDeleteUser(e)}>
                   Delete Account
                 </Button>
-
-              </Card.Body>
-
-            </Form>
-            
+            </Form>           
         </Card>
       </Row >
     );

@@ -42190,23 +42190,16 @@ class ProfileView extends _reactDefault.default.Component {
                                 __self: this,
                                 children: "Delete your Account"
                             }),
-                            /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Card.Body, {
+                            /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
+                                variant: "danger",
+                                onClick: (e)=>this.handleDeleteUser(e)
+                                ,
                                 __source: {
                                     fileName: "src/components/profile-view/profile-view.jsx",
                                     lineNumber: 235
                                 },
                                 __self: this,
-                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
-                                    variant: "danger",
-                                    onClick: (e)=>this.handleDeleteUser(e)
-                                    ,
-                                    __source: {
-                                        fileName: "src/components/profile-view/profile-view.jsx",
-                                        lineNumber: 237
-                                    },
-                                    __self: this,
-                                    children: "Delete Account"
-                                })
+                                children: "Delete Account"
                             })
                         ]
                     })
@@ -42267,24 +42260,28 @@ const SET_FILTER = 'SET_FILTER';
 const SET_USER = 'SET_USER';
 const UPDATE_USER = 'UPDATE_USER';
 function setMovies(value) {
+    console.log('SET_MOVIES action reached');
     return {
         type: SET_MOVIES,
         value
     };
 }
 function setFilter(value) {
+    console.log('SET_FILTER action reached');
     return {
         type: SET_FILTER,
         value
     };
 }
 function setUser(value) {
+    console.log('SET_USER action reached');
     return {
         type: SET_USER,
         value
     };
 }
 function updateUser(value) {
+    console.log('UPDATE_USER action reached');
     return {
         type: UPDATE_USER,
         value
