@@ -5,6 +5,8 @@
  
  ## [![Netlify Status](https://api.netlify.com/api/v1/badges/7c0b7549-5ca2-4957-a79f-d6df5e165406/deploy-status)](https://app.netlify.com/sites/myflixmovieapp/deploys)
 
+ ### To register/login: https://myflixmovieapp.netlify.app/
+
 ## Getting Started
 **Using React, build the client-side for an application called myFlix based on its existing server-side code (REST API and database)...**
 
@@ -65,6 +67,15 @@
 - react-router-dom
 - redux
 - redux-devtools-extension
+- @parcel/transformer-image
+- @parcel/transformer-sass
+- parcel-bundler
+
+
+
+
+   
+
 
 
 
