@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
-//import PropTypes from 'prop-types';
 import { Button, Card, CardDeck, Form, Row } from 'react-bootstrap';
 
 import { setUser, updateUser } from '../../actions/actions';
@@ -252,17 +251,3 @@ let mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps, { setUser, updateUser })(ProfileView);
-
-/*ProfileView.propTypes = {
-  user: PropTypes.shape({
-    FavoriteMovies: PropTypes.arrayOf(
-      PropTypes.shape({
-        _id: PropTypes.string.isRequired,
-        Title: PropTypes.string.isRequired,
-      })
-    ),
-    Username: PropTypes.string.isRequired,
-    Email: PropTypes.string.isRequired,
-    Birthdate: PropTypes.string,
-  }),
-}; */

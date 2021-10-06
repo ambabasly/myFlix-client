@@ -1,5 +1,4 @@
 import React from 'react';
-//import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
 import axios from 'axios';
@@ -78,21 +77,6 @@ export class MovieView extends React.Component {
     );
   }
 }
-
-/*MovieView.propTypes = {
-  movie: PropTypes.shape({
-    Title: PropTypes.string.isRequired,
-    Description: PropTypes.string.isRequired,
-    ImageURL: PropTypes.string.isRequired,
-    Featured: PropTypes.bool.isRequired,
-    Genre: PropTypes.shape({
-      Name: PropTypes.string.isRequired
-    }),
-    Director: PropTypes.shape({
-      Name: PropTypes.string.isRequired
-    }),
-  }).isRequired
-};*/
 
 
 

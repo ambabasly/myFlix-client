@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-//import PropTypes from 'prop-types';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
@@ -171,15 +170,6 @@ export function RegistrationView(props) {
   );
 }
 
-/*RegistrationView.propTypes = {
-  register: PropTypes.shape({
-    Name: PropTypes.string.isRequired,
-    Username: PropTypes.string.isRequired,
-    Password: PropTypes.string.isRequired,
-    Email: PropTypes.string.isRequired,
-    BirthDate: PropTypes.string.isRequired
-  }),
-};*/
     
 
   
