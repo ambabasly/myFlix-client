@@ -7,6 +7,9 @@
 
  ### To register/login: https://myflixmovieapp.netlify.app/
 
+## https://user-images.githubusercontent.com/88083504/136634955-4082fe7d-4c1e-4c21-b971-fa230c91d97f.mp4
+
+
 ## Getting Started
 **Using React, build the client-side for an application called myFlix based on its existing server-side code (REST API and database)...**
 
