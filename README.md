@@ -5,10 +5,11 @@
  
  ## [![Netlify Status](https://api.netlify.com/api/v1/badges/7c0b7549-5ca2-4957-a79f-d6df5e165406/deploy-status)](https://app.netlify.com/sites/myflixmovieapp/deploys)
 
- ## Video clip of App
+
  ### To register/login: https://myflixmovieapp.netlify.app/
 
-## https://user-images.githubusercontent.com/88083504/136634955-4082fe7d-4c1e-4c21-b971-fa230c91d97f.mp4
+
+## Click me to see video: https://user-images.githubusercontent.com/88083504/136634955-4082fe7d-4c1e-4c21-b971-fa230c91d97f.mp4
 
 
 ## Getting Started
