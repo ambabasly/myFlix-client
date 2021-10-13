@@ -41766,7 +41766,7 @@ class ProfileView extends _reactDefault.default.Component {
             console.log(error);
         });
     }
-    removeFavouriteMovie() {
+    removeFavouriteMovie(movie) {
         const token = localStorage.getItem('token');
         const username = localStorage.getItem('user');
         _axiosDefault.default.delete(`https://my-flixdbapp.herokuapp.com/users/${username}/movies/${movie._id}`, {

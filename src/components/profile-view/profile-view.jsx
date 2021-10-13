@@ -53,7 +53,7 @@ export class ProfileView extends React.Component {
   }
 
 
-  removeFavouriteMovie() {
+  removeFavouriteMovie(movie) {
     const token = localStorage.getItem('token');
     const username = localStorage.getItem('user');
 
