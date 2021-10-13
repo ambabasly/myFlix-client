@@ -134,4 +134,9 @@ body {
 .movie-card:hover, .movie-card focus {
   cursor: pointer;
 }
+
+body {
+  background-image: url("background.82d31dcb.jpg");
+  background-size: cover;
+}
 /*# sourceMappingURL=index.c1e31cef.css.map */
