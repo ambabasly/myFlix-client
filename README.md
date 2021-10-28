@@ -4,9 +4,8 @@
 - React
  
  ## [![Netlify Status](https://api.netlify.com/api/v1/badges/7c0b7549-5ca2-4957-a79f-d6df5e165406/deploy-status)](https://app.netlify.com/sites/myflixmovieapp/deploys)
-
-
- ### To register/login: https://myflixmovieapp.netlify.app/
+ 
+ To use it, please register in the welcome page. <a href="https://myflixmovieapp.netlify.app/">link here!</a>
 
 
 ## Click me to see video:  https://user-images.githubusercontent.com/88083504/136636200-6410f6e7-9dfa-4839-abb0-c5497e6112bf.mp4
