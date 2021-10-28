@@ -8,7 +8,7 @@
  To use it, please register in the welcome page. <a href="https://myflixmovieapp.netlify.app/">link here!</a>
 
 
-## Click me to see video:  https://user-images.githubusercontent.com/88083504/136636200-6410f6e7-9dfa-4839-abb0-c5497e6112bf.mp4
+Click me to see video:  https://user-images.githubusercontent.com/88083504/136636200-6410f6e7-9dfa-4839-abb0-c5497e6112bf.mp4
 
 
 ## Getting Started
