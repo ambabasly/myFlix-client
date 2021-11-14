@@ -41824,19 +41824,19 @@ class ProfileView extends _reactDefault.default.Component {
         });
     }
     setName(input) {
-        this.Name = input;
+        this.state.Name = input;
     }
     setUsername(input) {
-        this.Username = input;
+        this.state.Username = input;
     }
     setPassword(input) {
-        this.Password = input;
+        this.state.Password = input;
     }
     setEmail(input) {
-        this.Email = input;
+        this.state.Email = input;
     }
     setBirthdate(input) {
-        this.Birthdate = input;
+        this.state.Birthdate = input;
     }
     handleDeleteUser(e) {
         e.preventDefault();

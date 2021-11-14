@@ -1,16 +1,14 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
+import React from "react";
+import Button from "react-bootstrap/Button";
 
-import './director-view.scss';
+import "./director-view.scss";
 
 export class DirectorView extends React.Component {
-
   render() {
     const { director, onBackClick } = this.props;
 
     return (
       <div className="director-view">
-
         <div className="director-name">
           <h1>
             <span className="value">{director.Name}</span>
@@ -25,12 +23,17 @@ export class DirectorView extends React.Component {
           <span className="value">{director.Birthdate}</span>
         </div>
 
-        <Button variant="primary" onClick={() => {
-           onBackClick(null); }}>Back</Button>
+        <Button
+          variant="primary"
+          onClick={() => {
+            onBackClick(null);
+          }}
+        >
+          Back
+        </Button>
       </div>
     );
   }
 }
-
 
 export default DirectorView;
