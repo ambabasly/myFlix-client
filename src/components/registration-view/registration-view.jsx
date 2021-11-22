@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
-//import Button from 'react-bootstrap/Button';
 import Row from "react-bootstrap/Row";
 import { Link } from "react-router-dom";
-//import registericon from './register-icon.png';
-//import logo from './myflix-logo.png';
+
 
 import "./registration-view.scss";
 
