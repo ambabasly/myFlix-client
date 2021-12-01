@@ -6,20 +6,15 @@
  ## [![Netlify Status](https://api.netlify.com/api/v1/badges/7c0b7549-5ca2-4957-a79f-d6df5e165406/deploy-status)](https://app.netlify.com/sites/myflixmovieapp/deploys)
  
  To use it, please register in the welcome page. <a href="https://myflixmovieapp.netlify.app/">link here!</a>
-
-
-Click me to see video:  https://user-images.githubusercontent.com/88083504/136636200-6410f6e7-9dfa-4839-abb0-c5497e6112bf.mp4
-
+ 
+<img width="1440" alt="Screenshot 2021-12-01 at 23 10 31" src="https://user-images.githubusercontent.com/88083504/144322341-1bbc12d1-a697-4217-997e-e8d25b92cc11.png">
 
 ## Getting Started
 **Using React, build the client-side for an application called myFlix based on its existing server-side code (REST API and database)...**
 
-
 ### User Stories
 - As a user, I want to be able to access information about movies, directors, and genres so I can learn more about movies I have seen or that interest me.
 - As a user, I want to be able to create a profile to store data about my favorite movies.
-
-
 
 # Main view
 ## Essential Views and Features:
