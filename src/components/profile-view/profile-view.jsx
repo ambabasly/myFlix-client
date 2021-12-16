@@ -63,7 +63,7 @@ export class ProfileView extends React.Component {
         }
       )
       .then(() => {
-        alert("Movie was removed");
+        alert("Movie was removed successfully");
         this.componentDidMount();
       })
       .catch(function (error) {
