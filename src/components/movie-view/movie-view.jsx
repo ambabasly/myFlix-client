@@ -2,6 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Badge from 'react-bootstrap/Badge';
 
 import "./movie-view.scss";
 
@@ -42,14 +43,16 @@ export class MovieView extends React.Component {
     const { movie, onBackClick } = this.props;
 
     return (
-      <div className="movie-view">
+      <div className="movie-view justify-content-md-center">
         <div className="movie-poster">
           <img src={movie.ImageURL} />
         </div>
 
         <div className="movie-title">
-          <h1 bg="primary">
-            <span className="value">{movie.Title}</span>
+          <h1>
+            <Badge>
+              <span className="value">{movie.Title}</span>
+            </Badge>
           </h1>
         </div>
 
@@ -68,7 +71,7 @@ export class MovieView extends React.Component {
         </div>
 
         <Button
-          variant="sucess"
+          variant="danger"
           className="fav-button"
           value={movie._id}
           onClick={(e) => this.addFavorite(e, movie)}

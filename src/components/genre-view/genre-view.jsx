@@ -6,7 +6,7 @@ export class GenreView extends React.Component {
     const { genre, onBackClick } = this.props;
 
     return (
-      <div className="genre-view">
+      <div className="genre-view ">
         <div className="genre-name">
           <h1>
             <span className="value">{genre.Name}</span>
@@ -15,7 +15,6 @@ export class GenreView extends React.Component {
         <div className="genre-description">
           <span className="value">{genre.Description}</span>
         </div>
-
         <Button
           variant="primary"
           onClick={() => {
