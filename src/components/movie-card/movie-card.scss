@@ -1,21 +1,9 @@
-.app-container {
-  background-color: whitesmoke;
-}
-
-.image-container {
-  transition: transform 0.2s;
-  border-style: none;
-}
-
-.image-container:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.image-container:hover .overlay {
-  opacity: 1;
-}
-
-.fav-btn {
-  padding-left: 35px;
-}
+.movie-card {
+    margin-top: auto;
+    width: auto;
+    padding:30px;
+    border:0.3px solid grey;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 15px;
+    cursor: pointer;
+  }

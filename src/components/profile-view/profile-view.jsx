@@ -196,7 +196,7 @@ export class ProfileView extends React.Component {
                           {movie.Title}
                         </Card.Title>
                         <Button
-                          size="sm"
+                          size="md"
                           className="profile-button remove-favorite"
                           variant="danger"
                           value={movie._id}

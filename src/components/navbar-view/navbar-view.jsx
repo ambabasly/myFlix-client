@@ -33,7 +33,7 @@ export class NavBar extends React.Component {
             </Nav.Link>
 
             <Nav.Link as={Link} to={profile} className="link-text">
-              Profile
+              Update Profile
             </Nav.Link>
 
             <Nav.Link to={"/"} onClick={this.onLoggedOut}>
@@ -46,7 +46,3 @@ export class NavBar extends React.Component {
   }
 }
 export default NavBar;
-
-
-
-

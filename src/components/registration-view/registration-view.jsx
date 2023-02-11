@@ -5,7 +5,6 @@ import axios from "axios";
 import Row from "react-bootstrap/Row";
 import { Link } from "react-router-dom";
 
-
 import "./registration-view.scss";
 
 export function RegistrationView(props) {

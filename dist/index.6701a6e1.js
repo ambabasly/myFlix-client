@@ -22774,7 +22774,6 @@ var _col = require("react-bootstrap/Col");
 var _colDefault = parcelHelpers.interopDefault(_col);
 // #0
 var _actions = require("../../actions/actions");
-// we haven't written this one yet
 var _moviesList = require("../movies-list/movies-list");
 var _moviesListDefault = parcelHelpers.interopDefault(_moviesList);
 /*#1 The rest of components import statements but without the MovieCard's because it will be imported and used in the MoviesList component rather
@@ -22837,7 +22836,7 @@ class MainView extends _reactDefault.default.Component {
         return(/*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.BrowserRouter, {
             __source: {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 81
+                lineNumber: 80
             },
             __self: this,
             children: [
@@ -22845,7 +22844,7 @@ class MainView extends _reactDefault.default.Component {
                     user: user,
                     __source: {
                         fileName: "src/components/main-view/main-view.jsx",
-                        lineNumber: 82
+                        lineNumber: 81
                     },
                     __self: this
                 }),
@@ -22853,7 +22852,7 @@ class MainView extends _reactDefault.default.Component {
                     className: "main-view justify-content-md-center",
                     __source: {
                         fileName: "src/components/main-view/main-view.jsx",
-                        lineNumber: 84
+                        lineNumber: 83
                     },
                     __self: this,
                     children: [
@@ -22876,7 +22875,7 @@ class MainView extends _reactDefault.default.Component {
                             },
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 85
+                                lineNumber: 84
                             },
                             __self: this
                         }),
@@ -22893,7 +22892,7 @@ class MainView extends _reactDefault.default.Component {
                             },
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 101
+                                lineNumber: 100
                             },
                             __self: this
                         }),
@@ -22907,7 +22906,7 @@ class MainView extends _reactDefault.default.Component {
                             },
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 113
+                                lineNumber: 112
                             },
                             __self: this
                         }),
@@ -22933,7 +22932,7 @@ class MainView extends _reactDefault.default.Component {
                             },
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 125
+                                lineNumber: 124
                             },
                             __self: this
                         }),
@@ -22959,7 +22958,7 @@ class MainView extends _reactDefault.default.Component {
                             },
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 146
+                                lineNumber: 145
                             },
                             __self: this
                         }),
@@ -22985,7 +22984,7 @@ class MainView extends _reactDefault.default.Component {
                             },
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 170
+                                lineNumber: 169
                             },
                             __self: this
                         }),
@@ -23004,7 +23003,7 @@ class MainView extends _reactDefault.default.Component {
                             },
                             __source: {
                                 fileName: "src/components/main-view/main-view.jsx",
-                                lineNumber: 194
+                                lineNumber: 193
                             },
                             __self: this
                         })
@@ -24450,7 +24449,7 @@ module.exports = {
 };
 
 },{"./../../package.json":"5vay1"}],"5vay1":[function(require,module,exports) {
-module.exports = JSON.parse("{\"_from\":\"axios\",\"_id\":\"axios@0.21.4\",\"_inBundle\":false,\"_integrity\":\"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==\",\"_location\":\"/axios\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"tag\",\"registry\":true,\"raw\":\"axios\",\"name\":\"axios\",\"escapedName\":\"axios\",\"rawSpec\":\"\",\"saveSpec\":null,\"fetchSpec\":\"latest\"},\"_requiredBy\":[\"#USER\",\"/\"],\"_resolved\":\"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz\",\"_shasum\":\"c67b90dc0568e5c1cf2b0b858c43ba28e2eda575\",\"_spec\":\"axios\",\"_where\":\"/Users/arikhan/Desktop/web_dev/myFlix-client\",\"author\":{\"name\":\"Matt Zabriskie\"},\"browser\":{\"./lib/adapters/http.js\":\"./lib/adapters/xhr.js\"},\"bugs\":{\"url\":\"https://github.com/axios/axios/issues\"},\"bundleDependencies\":false,\"bundlesize\":[{\"path\":\"./dist/axios.min.js\",\"threshold\":\"5kB\"}],\"dependencies\":{\"follow-redirects\":\"^1.14.0\"},\"deprecated\":false,\"description\":\"Promise based HTTP client for the browser and node.js\",\"devDependencies\":{\"coveralls\":\"^3.0.0\",\"es6-promise\":\"^4.2.4\",\"grunt\":\"^1.3.0\",\"grunt-banner\":\"^0.6.0\",\"grunt-cli\":\"^1.2.0\",\"grunt-contrib-clean\":\"^1.1.0\",\"grunt-contrib-watch\":\"^1.0.0\",\"grunt-eslint\":\"^23.0.0\",\"grunt-karma\":\"^4.0.0\",\"grunt-mocha-test\":\"^0.13.3\",\"grunt-ts\":\"^6.0.0-beta.19\",\"grunt-webpack\":\"^4.0.2\",\"istanbul-instrumenter-loader\":\"^1.0.0\",\"jasmine-core\":\"^2.4.1\",\"karma\":\"^6.3.2\",\"karma-chrome-launcher\":\"^3.1.0\",\"karma-firefox-launcher\":\"^2.1.0\",\"karma-jasmine\":\"^1.1.1\",\"karma-jasmine-ajax\":\"^0.1.13\",\"karma-safari-launcher\":\"^1.0.0\",\"karma-sauce-launcher\":\"^4.3.6\",\"karma-sinon\":\"^1.0.5\",\"karma-sourcemap-loader\":\"^0.3.8\",\"karma-webpack\":\"^4.0.2\",\"load-grunt-tasks\":\"^3.5.2\",\"minimist\":\"^1.2.0\",\"mocha\":\"^8.2.1\",\"sinon\":\"^4.5.0\",\"terser-webpack-plugin\":\"^4.2.3\",\"typescript\":\"^4.0.5\",\"url-search-params\":\"^0.10.0\",\"webpack\":\"^4.44.2\",\"webpack-dev-server\":\"^3.11.0\"},\"homepage\":\"https://axios-http.com\",\"jsdelivr\":\"dist/axios.min.js\",\"keywords\":[\"xhr\",\"http\",\"ajax\",\"promise\",\"node\"],\"license\":\"MIT\",\"main\":\"index.js\",\"name\":\"axios\",\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/axios/axios.git\"},\"scripts\":{\"build\":\"NODE_ENV=production grunt build\",\"coveralls\":\"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js\",\"examples\":\"node ./examples/server.js\",\"fix\":\"eslint --fix lib/**/*.js\",\"postversion\":\"git push && git push --tags\",\"preversion\":\"npm test\",\"start\":\"node ./sandbox/server.js\",\"test\":\"grunt test\",\"version\":\"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json\"},\"typings\":\"./index.d.ts\",\"unpkg\":\"dist/axios.min.js\",\"version\":\"0.21.4\"}");
+module.exports = JSON.parse("{\"_args\":[[\"axios@0.21.4\",\"/Users/arikhan/Desktop/web_dev/Client-Side Programming and React.js/myFlix-client\"]],\"_from\":\"axios@0.21.4\",\"_id\":\"axios@0.21.4\",\"_inBundle\":false,\"_integrity\":\"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==\",\"_location\":\"/axios\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"version\",\"registry\":true,\"raw\":\"axios@0.21.4\",\"name\":\"axios\",\"escapedName\":\"axios\",\"rawSpec\":\"0.21.4\",\"saveSpec\":null,\"fetchSpec\":\"0.21.4\"},\"_requiredBy\":[\"/\"],\"_resolved\":\"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz\",\"_spec\":\"0.21.4\",\"_where\":\"/Users/arikhan/Desktop/web_dev/Client-Side Programming and React.js/myFlix-client\",\"author\":{\"name\":\"Matt Zabriskie\"},\"browser\":{\"./lib/adapters/http.js\":\"./lib/adapters/xhr.js\"},\"bugs\":{\"url\":\"https://github.com/axios/axios/issues\"},\"bundlesize\":[{\"path\":\"./dist/axios.min.js\",\"threshold\":\"5kB\"}],\"dependencies\":{\"follow-redirects\":\"^1.14.0\"},\"description\":\"Promise based HTTP client for the browser and node.js\",\"devDependencies\":{\"coveralls\":\"^3.0.0\",\"es6-promise\":\"^4.2.4\",\"grunt\":\"^1.3.0\",\"grunt-banner\":\"^0.6.0\",\"grunt-cli\":\"^1.2.0\",\"grunt-contrib-clean\":\"^1.1.0\",\"grunt-contrib-watch\":\"^1.0.0\",\"grunt-eslint\":\"^23.0.0\",\"grunt-karma\":\"^4.0.0\",\"grunt-mocha-test\":\"^0.13.3\",\"grunt-ts\":\"^6.0.0-beta.19\",\"grunt-webpack\":\"^4.0.2\",\"istanbul-instrumenter-loader\":\"^1.0.0\",\"jasmine-core\":\"^2.4.1\",\"karma\":\"^6.3.2\",\"karma-chrome-launcher\":\"^3.1.0\",\"karma-firefox-launcher\":\"^2.1.0\",\"karma-jasmine\":\"^1.1.1\",\"karma-jasmine-ajax\":\"^0.1.13\",\"karma-safari-launcher\":\"^1.0.0\",\"karma-sauce-launcher\":\"^4.3.6\",\"karma-sinon\":\"^1.0.5\",\"karma-sourcemap-loader\":\"^0.3.8\",\"karma-webpack\":\"^4.0.2\",\"load-grunt-tasks\":\"^3.5.2\",\"minimist\":\"^1.2.0\",\"mocha\":\"^8.2.1\",\"sinon\":\"^4.5.0\",\"terser-webpack-plugin\":\"^4.2.3\",\"typescript\":\"^4.0.5\",\"url-search-params\":\"^0.10.0\",\"webpack\":\"^4.44.2\",\"webpack-dev-server\":\"^3.11.0\"},\"homepage\":\"https://axios-http.com\",\"jsdelivr\":\"dist/axios.min.js\",\"keywords\":[\"xhr\",\"http\",\"ajax\",\"promise\",\"node\"],\"license\":\"MIT\",\"main\":\"index.js\",\"name\":\"axios\",\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/axios/axios.git\"},\"scripts\":{\"build\":\"NODE_ENV=production grunt build\",\"coveralls\":\"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js\",\"examples\":\"node ./examples/server.js\",\"fix\":\"eslint --fix lib/**/*.js\",\"postversion\":\"git push && git push --tags\",\"preversion\":\"npm test\",\"start\":\"node ./sandbox/server.js\",\"test\":\"grunt test\",\"version\":\"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json\"},\"typings\":\"./index.d.ts\",\"unpkg\":\"dist/axios.min.js\",\"version\":\"0.21.4\"}");
 
 },{}],"iGO1D":[function(require,module,exports) {
 'use strict';
@@ -42363,7 +42362,7 @@ function VisibilityFilterInput(props) {
         placeholder: "Search Movies",
         __source: {
             fileName: "src/components/visibility-filter-input/visibility-filter-input.jsx",
-            lineNumber: 10
+            lineNumber: 9
         },
         __self: this
     }));

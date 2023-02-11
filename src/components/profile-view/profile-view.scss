@@ -3,6 +3,8 @@
   border: 0.3px solid grey;
   box-shadow: 5px 5px 5px grey;
   border-radius: 15px;
+  width: auto;
+  cursor: pointer;
 }
 
 .app-container {
@@ -16,3 +18,4 @@
 .favorites-items {
   border-style: none;
 }
+

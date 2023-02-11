@@ -30,30 +30,32 @@ export class MovieCard extends React.Component {
     const { movie } = this.props;
 
     return (
-      <Container>
-        <Card style={{ border: 0 }} bg="secondary" text="white">
-          <Link to={`/movies/${movie._id}`}>
-            <Card.Img
-              className="image-container"
-              variant="top"
-              src={movie.ImagePath}
-            />
-          </Link>
+      <div className="movie-card">
+        <Container>
+          <Card style={{ border: 0 }} bg="secondary" text="white">
+            <Link to={`/movies/${movie._id}`}>
+              <Card.Img
+                className="image-container"
+                variant="top"
+                src={movie.ImagePath}
+              />
+            </Link>
 
-          <Card.Body
-            className="fav-btn"
-            style={{ paddingLeft: 30, margin: "auto" }}
-          >
-            <Button
-              variant="dark"
-              value={movie._id}
-              onClick={(e) => this.addFavorite(e, movie)}
+            <Card.Body
+              className="fav-btn"
+              style={{ paddingLeft: 30, margin: "auto" }}
             >
-              Add to Favorites
-            </Button>
-          </Card.Body>
-        </Card>
-      </Container>
+              <Button
+                variant="dark"
+                value={movie._id}
+                onClick={(e) => this.addFavorite(e, movie)}
+              >
+                Add to Favorites
+              </Button>
+            </Card.Body>
+          </Card>
+        </Container>
+      </div>
     );
   }
 }
